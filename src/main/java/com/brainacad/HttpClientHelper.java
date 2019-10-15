@@ -10,16 +10,23 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
 import java.util.Map;
 
 import static org.apache.http.protocol.HTTP.USER_AGENT;
 
 public class HttpClientHelper {
 
-    public static HttpResponse get(String endpointUrl, String parameters){
-       //TODO: написать метод для GET запроса с хедерами по умолчанию
-       return null;
+    public static HttpResponse get(String endpointUrl, String parameters) throws IOException {
+        Map<String, String> headers=new HashMap<>();
+        //Добавляем в headers наш заголовок
+        headers.put("Content-Type", "application/json");
+
+        return get( endpointUrl,  parameters, headers ) ;
+
     }
+
+
 
     //REST GET запрос
     public static HttpResponse get(String endpointUrl, String parameters, Map<String, String> headers) throws IOException {
