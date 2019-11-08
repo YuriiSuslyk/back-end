@@ -19,36 +19,28 @@
     <aspectj.version>1.8.10</aspectj.version>
     <allure-junit4.version>2.6.0</allure-junit4.version>
   </properties>
+<dependecies>
 
-
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
-    <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpclient</artifactId>
-      <version>4.5.6</version>
-    </dependency>
-  <dependency>
-  </dependency>
-    <dependency>
-      <groupId>com.jayway.jsonpath</groupId>
-      <artifactId>json-path</artifactId>
-      <version>2.0.0</version>
       <dependency>
-        <dependency>
-
-        </dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>3.0.2</version>
       </dependency>
+      <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>3.0.2</version>
+        <scope>test</scope>
+      </dependency>
+
+        <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-junit4</artifactId>
       <version>${allure-junit4.version}</version>
-    </dependency>
-  </dependencies>
+    <dependency>
+
+  <dependencies\>
 
 <build>
 <plugins>
